@@ -8,8 +8,9 @@
 
 
     <!-- This will include all the contents of example_include.xacro first. Go check it out! -->
-    <xacro:include filename="example_include.xacro" />
-
+    <!--xacro:include filename="example_include.xacro" /-->
+    
+    <xacro:include filename="$(find urdf_example)/description/example_include.xacro" />
 
 
     <!-- This first link called "world" is empty -->
@@ -173,7 +174,8 @@
     </link>
 
 
-    <xacro:include filename="example_gazebo.xacro" />
+    <!--xacro:include filename="example_gazebo.xacro" /-->
+    <xacro:include filename="$(find urdf_example)/description/example_gazebo.xacro" />
 
 
 </robot>
